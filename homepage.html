@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jazma Foskin's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
+    </header>
+    <h1>Hi, I'm Jazma Foskin. I'm a Software Developer</h1>
+    <h2 id="about-me">About Me</h2>
+    <h2 id="contact-me">Contact Me</h2>
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="message()">
+          Quick Message
+        </button>
+        <button type="button" class="toggle-btn" onclick="project()">
+          Start Project
+        </button>
+      </div>
+      <form id="message" action="https://formsubmit.co/jazmafoskin@gmail.com" method="POST class="input-group">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Enter Your Name"
+          required
+        />
+        <input
+          type="email"
+          class="input-field"
+          placeholder="Enter Your Email"
+          required
+        />
+        <textarea
+          type="text"
+          class="input-field"
+          rows="4"
+          cols="30"
+          placeholder="Enter Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <form id="project" action="https://formsubmit.co/jazmafoskin@gmail.com" method="POST class="input-group2">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Enter Your Name"
+          required
+        />
+        <input
+          type="email"
+          class="input-field"
+          placeholder="Enter Your Email"
+          required
+        />
+        <div class="wrap-input100 input100-select">
+          <span class="input-group"></span>
+          <div>
+            <select class="input-field" name="service">
+              <option>Choose Services</option>
+              <option>Online Store</option>
+              <option>Create a Website</option>
+              <option>Mentorship</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <input
+          type="text"
+          class="input-field"
+          min="50"
+          placeholder="Enter Your Total Budget"
+        />
+        <textarea
+          type="text"
+          class="input-field"
+          rows="4"
+          cols="30"
+          placeholder="Enter Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/jazma-f/"
+          target="_blank"
+          alt="linkedin"
+          title="linkedin"
+          ><img src="linkedin.png"
+        /></a>
+        <a
+          href="https://github.com/jfoskin"
+          target="_blank"
+          alt="github"
+          title="github"
+          ><img src="git.png"
+        /></a>
+      </div>
+    </footer>
+    <script src="homepage.js"></script>
+  </body>
+</html>
